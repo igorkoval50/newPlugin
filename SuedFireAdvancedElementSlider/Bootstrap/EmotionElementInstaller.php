@@ -49,7 +49,7 @@ class EmotionElementInstaller
 
         //Kleiner Top Text oben/Small
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_pre_line1_slide1_color',
+            'name' => 'advanced_element_slider_pre_line1_slide_color1',
             'fieldLabel' => 'CSS Klasse kleiner Top Text',
             'supportText' => 'Change color classes KT-black, KT-purple, KT-orange',
             'allowBlank' => true
@@ -63,7 +63,7 @@ class EmotionElementInstaller
 
         //Zeile 1/Line 1
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_line1_slide1_color',
+            'name' => 'advanced_element_slider_line1_slide_color1',
             'fieldLabel' => 'CSS Klasse Zeile 1',
             'supportText' => 'Change color classes Z1-black, Z1-purple, Z1-orange',
             'allowBlank' => true
@@ -77,7 +77,7 @@ class EmotionElementInstaller
 
         //Zeile 2/Line 2
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_line2_slide1_color',
+            'name' => 'advanced_element_slider_line2_slide_color1',
             'fieldLabel' => 'CSS Klasse Zeile 2',
             'supportText' => 'Change color classes Z2-black, Z2-purple, Z2-orange',
             'allowBlank' => true
@@ -91,7 +91,7 @@ class EmotionElementInstaller
 
         //Button Text
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_button_text_slide1_color',
+            'name' => 'advanced_element_slider_button_text_slide_color1',
             'fieldLabel' => 'CSS Klasse Button Text Color',
             'supportText' => 'Change color classes BT-white, BT-purple, BT-orange',
             'allowBlank' => true
@@ -105,7 +105,7 @@ class EmotionElementInstaller
 
         //Button-Farbe/Button-Colour
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_button_text_slide1_background',
+            'name' => 'advanced_element_slider_button_text_slide_background1',
             'fieldLabel' => 'CSS Klasse Button',
             'supportText' => 'Change color classes BF-purple',
             'allowBlank' => true
@@ -127,7 +127,7 @@ class EmotionElementInstaller
 
         ////Model Name
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_model_name_slide1_color',
+            'name' => 'advanced_element_slider_model_name_slide_color1',
             'fieldLabel' => 'CSS Klasse Model Name',
             'supportText' => 'Change color classes MN-white, MN-purple, MN-orange',
             'allowBlank' => true
@@ -142,7 +142,7 @@ class EmotionElementInstaller
 
         //Kleiner Top Text oben/Small
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_pre_line1_slide2_color',
+            'name' => 'advanced_element_slider_pre_line1_slide_color2',
             'fieldLabel' => 'CSS Klasse kleiner Top Text',
             'supportText' => 'Change color classes KT-black, KT-purple, KT-orange',
             'allowBlank' => true
@@ -157,7 +157,7 @@ class EmotionElementInstaller
 
         //Zeile 1/Line 1
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_line1_slide2_color',
+            'name' => 'advanced_element_slider_line1_slide_color2',
             'fieldLabel' => 'CSS Klasse Zeile 1',
             'supportText' => 'Change color classes Z1-black, Z1-purple, Z1-orange',
             'allowBlank' => true
@@ -171,7 +171,7 @@ class EmotionElementInstaller
 
         //Zeile 2/Line 2
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_line2_slide2_color',
+            'name' => 'advanced_element_slider_line2_slide_color2',
             'fieldLabel' => 'CSS Klasse Zeile 2',
             'supportText' => 'Change color classes Z2-black, Z2-purple, Z2-orange',
             'allowBlank' => true
@@ -185,7 +185,7 @@ class EmotionElementInstaller
 
         //Button Text
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_button_text_slide2_color',
+            'name' => 'advanced_element_slider_button_text_slide_color2',
             'fieldLabel' => 'CSS Klasse Button Text Color',
             'supportText' => 'Change color classes BT-white, BT-purple, BT-orange',
             'allowBlank' => true
@@ -199,7 +199,7 @@ class EmotionElementInstaller
 
         //Button-Farbe/Button-Colour
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_button_text_slide2_background',
+            'name' => 'advanced_element_slider_button_text_slide_background2',
             'fieldLabel' => 'CSS Klasse Button',
             'supportText' => 'Change color classes BF-purple',
             'allowBlank' => true
@@ -222,7 +222,7 @@ class EmotionElementInstaller
 
         ////Model Name
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_model_name_slide2_color',
+            'name' => 'advanced_element_slider_model_name_slide_color2',
             'fieldLabel' => 'CSS Klasse Model Name',
             'supportText' => 'Change color classes MN-white, MN-purple, MN-orange',
             'allowBlank' => true
@@ -237,7 +237,7 @@ class EmotionElementInstaller
 
         //Kleiner Top Text oben/Small
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_pre_line1_slide3_color',
+            'name' => 'advanced_element_slider_pre_line1_slide_color3',
             'fieldLabel' => 'CSS Klasse kleiner Top Text',
             'supportText' => 'Change color classes KT-black, KT-purple, KT-orange',
             'allowBlank' => true
@@ -252,7 +252,7 @@ class EmotionElementInstaller
 
         //Zeile 1/Line 1
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_line1_slide3_color',
+            'name' => 'advanced_element_slider_line1_slide_color3',
             'fieldLabel' => 'CSS Klasse Zeile 1',
             'supportText' => 'Change color classes Z1-black, Z1-purple, Z1-orange',
             'allowBlank' => true
@@ -266,7 +266,7 @@ class EmotionElementInstaller
 
         //Zeile 2/Line 2
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_line2_slide3_color',
+            'name' => 'advanced_element_slider_line2_slide_color3',
             'fieldLabel' => 'CSS Klasse Zeile 2',
             'supportText' => 'Change color classes Z2-black, Z2-purple, Z2-orange',
             'allowBlank' => true
@@ -280,7 +280,7 @@ class EmotionElementInstaller
 
         //Button Text
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_button_text_slide3_color',
+            'name' => 'advanced_element_slider_button_text_slide_color3',
             'fieldLabel' => 'CSS Klasse Button Text Color',
             'supportText' => 'Change color classes BT-white, BT-purple, BT-orange',
             'allowBlank' => true
@@ -294,7 +294,7 @@ class EmotionElementInstaller
 
         //Button-Farbe/Button-Colour
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_button_text_slide3_background',
+            'name' => 'advanced_element_slider_button_text_slide_background3',
             'fieldLabel' => 'CSS Klasse Button',
             'supportText' => 'Change color classes BF-purple',
             'allowBlank' => true
@@ -317,7 +317,7 @@ class EmotionElementInstaller
 
         ////Model Name
         $advancedSliderElement->createTextField([
-            'name' => 'advanced_element_slider_model_name_slide3_color',
+            'name' => 'advanced_element_slider_model_name_slide_color3',
             'fieldLabel' => 'CSS Klasse Model Name',
             'supportText' => 'Change color classes MN-white, MN-purple, MN-orange',
             'allowBlank' => true
