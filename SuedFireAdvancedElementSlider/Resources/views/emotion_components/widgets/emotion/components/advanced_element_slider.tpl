@@ -77,5 +77,23 @@
             </div>
         {/block}
     </div>
+
+    <style>
+        .KT-black, .Z1-black, .Z2-black, .MN-black {
+            color: #000000;
+        }
+        .KT-purple, .Z1-purple, .Z2-purple, .BT-purple, .MN-purple {
+            color: #A81756;
+        }
+        .BF-purple {
+            background-color: #A81756;
+        }
+        .KT-orange, .Z1-orange, .Z2-orang, .BT-orange {
+            color: #FF9132;
+        }
+        .MN-white, .BT-white {
+            color: #FFFFFF;
+        }
+    </style>
 {/block}
 
