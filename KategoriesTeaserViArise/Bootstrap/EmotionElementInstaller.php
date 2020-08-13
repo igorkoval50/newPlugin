@@ -1,6 +1,6 @@
 <?php
 
-namespace KategoriesTeaserDelight\Bootstrap;
+namespace KategoriesTeaserViArise\Bootstrap;
 
 use Shopware\Components\Emotion\ComponentInstaller;
 
@@ -28,11 +28,11 @@ class EmotionElementInstaller
 
     public function install()
     {
-        $delightElement = $this->emotionComponentInstaller->createOrUpdate(
+        $ViAriseElement = $this->emotionComponentInstaller->createOrUpdate(
             $this->pluginName,
-            'KategoriesTeaserDelight',
+            'KategoriesTeaserViArise',
             [
-                'name' => 'Delight Kategories',
+                'name' => 'Vi-Arise Kategories',
                 'xtype' => 'emotion-components-vimeo',
                 'template' => 'emotion_vimeo',
                 'cls' => 'emotion-vimeo-element',
@@ -40,33 +40,33 @@ class EmotionElementInstaller
             ]
         );
 
-        $delightElement->createMediaField([
+        $ViAriseElement->createMediaField([
             'name' => 'delight_image',
             'fieldLabel' => 'The banner image',
             'valueField' => 'virtualPath'
         ]);
 
-        $delightElement->createTextField([
+        $ViAriseElement->createTextField([
             'name' => 'delight_headline',
             'fieldLabel' => 'Headline of the banner',
             'supportText' => 'Write your banner headline.',
             'defaultValue' => 'Lackpflege'
         ]);
 
-        $delightElement->createTextField([
+        $ViAriseElement->createTextField([
             'name' => 'delight_button_txt',
             'fieldLabel' => 'text of the button',
             'supportText' => 'Write your txt what appear in the button.',
             'defaultValue' => 'Entdecken'
         ]);
 
-        $delightElement->createTextField([
+        $ViAriseElement->createTextField([
             'name' => 'delight_button_href',
             'fieldLabel' => 'href of the button',
             'supportText' => 'Write your href of the category',
             'defaultValue' => '#'
         ]);
-        $delightElement->createComboBoxField([
+        $ViAriseElement->createComboBoxField([
             'fieldLabel' => 'Verlinkung liegt auf',
             'name' =>  'fff_button_link_element',
             'supportText' => 'Sie können hier festlegen, welches Element verlinkt wird.',
@@ -79,7 +79,7 @@ class EmotionElementInstaller
             'position' => '27'
         ]);
 
-        $delightElement->createComboBoxField([
+        $ViAriseElement->createComboBoxField([
             'fieldLabel' => 'Hover-Effekt',
             'name' => 'time_style',
             'supportText' => 'Sie können hier den Effekt beim Darüberfahren mit der Maus festlegen.',

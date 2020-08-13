@@ -1,6 +1,6 @@
 <?php
 
-namespace KategoriesTeaserDelight\Subscriber;
+namespace KategoriesTeaserViArise\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
 use Enlight_Controller_ActionEventArgs;

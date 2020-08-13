@@ -1,15 +1,15 @@
 <?php
 
-namespace KategoriesTeaserDelight;
+namespace SocialButtonViArise;
 
 use Shopware\Components\Plugin;
 use Shopware\Components\Plugin\Context\ActivateContext;
 use Shopware\Components\Plugin\Context\DeactivateContext;
 use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UninstallContext;
-use KategoriesTeaserDelight\Bootstrap\EmotionElementInstaller;
+use SocialButtonViArise\Bootstrap\EmotionElementInstaller;
 
-class KategoriesTeaserDelight extends Plugin
+class SocialButtonViArise extends Plugin
 {
     public function install(InstallContext $installContext)
     {
