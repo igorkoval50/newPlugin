@@ -4,13 +4,18 @@
 
     <services>
         <!-- Add emotion component auto loader -->
-        <service id="kategories.teaser.vi.arise.emotion_view_subscriber" class="Shopware\Components\Emotion\EmotionComponentViewSubscriber">
+        <service id="kategories_teaser_vi_arise.emotion_view_subscriber" class="Shopware\Components\Emotion\EmotionComponentViewSubscriber">
             <argument>%kategories_teaser_vi_arise.plugin_dir%</argument>
             <tag name="shopware.event_subscriber" />
         </service>
 
+        <service id="kategories_teaser_vi_arise.kategories_teaser_handler" class="KategoriesTeaserViArise\ComponentHandler\KategoriesTeaserHandler">
+            <argument type="service" id="models"/>
+            <tag name="shopware_emotion.component_handler"/>
+        </service>
+
         <!-- Add TemplateRegistration subscriber-->
-        <service id="kategories.teaser.delight.subscriber.templates" class="KategoriesTeaserViArise\Subscriber\TemplateRegistration">
+        <service id="kategories_teaser_vi_arise.subscriber.templates" class="KategoriesTeaserViArise\Subscriber\TemplateRegistration">
             <argument>%kategories_teaser_vi_arise.plugin_dir%</argument>
             <tag name="shopware.event_subscriber"/>
         </service>

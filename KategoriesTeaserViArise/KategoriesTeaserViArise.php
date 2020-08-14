@@ -2,12 +2,12 @@
 
 namespace KategoriesTeaserViArise;
 
+use KategoriesTeaserViArise\Bootstrap\EmotionElementInstaller;
 use Shopware\Components\Plugin;
 use Shopware\Components\Plugin\Context\ActivateContext;
 use Shopware\Components\Plugin\Context\DeactivateContext;
 use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UninstallContext;
-use KategoriesTeaserViArise\Bootstrap\EmotionElementInstaller;
 
 class KategoriesTeaserViArise extends Plugin
 {

@@ -1,11 +1,14 @@
 {block name="widgets_emotion_components_vimeo_element"}
 <div class="delight-banner-wrapper">
+    <span>{$Data.vi_arise_button_href}</span>
+    <a href="{$Data.vi_arise_button_href}" class="btn delight-button">{$Data.vi_arise_subline}</a>
+
     <div class="img">
-        <img src="{$Data.delight_image}" alt="banner-image">
+        <img src="{$Data.vi_arise_image}" alt="banner-image">
     </div>
     <div class="banner-txt">
-        <h3 class="delight-headline">{$Data.delight_headline}</h3>
-        <a href="{$Data.delight_button_href}" class="btn delight-button">{$Data.delight_button_txt}</a>
+        <h3 class="delight-headline">{$Data.vi_arise_headline}</h3>
+        <a href="{$Data.vi_arise_button_href}" class="btn delight-button">{$Data.vi_arise_subline}</a>
     </div>
 </div>
 {/block}
