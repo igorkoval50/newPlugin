@@ -1,49 +1,55 @@
 {block name="widgets_emotion_components_vimeo_element"}
-<div class="delight-banner-wrapper">
-    <span>{$Data.vi_arise_button_href}</span>
-    <a href="{$Data.vi_arise_button_href}" class="btn delight-button">{$Data.vi_arise_subline}</a>
+    <a href="{$Data.vi_arise_button_href}" class="teaser-wrapper">
+        <span class="teaser-img">
+            <img src="{$Data.vi_arise_image}" alt="banner-image">
+        </span>
+        <span class="banner-txt">
+            <h2 class="teaser-headline">{$Data.vi_arise_headline}</h2>
+            <h3 class="teaser-subline">{$Data.vi_arise_subline}</h3>
+        </span>
+    </a>
 
-    <div class="img">
-        <img src="{$Data.vi_arise_image}" alt="banner-image">
-    </div>
-    <div class="banner-txt">
-        <h3 class="delight-headline">{$Data.vi_arise_headline}</h3>
-        <a href="{$Data.vi_arise_button_href}" class="btn delight-button">{$Data.vi_arise_subline}</a>
-    </div>
-</div>
+    <style>
+        .teaser-wrapper, .teaser-wrapper span {
+            display: block;
+        }
+        .teaser-wrapper {
+            position: relative;
+        }
+        .teaser-wrapper .banner-txt {
+            position: absolute;
+            background: #A81756;
+            width: 60%;
+            bottom: 10%;
+            left: 0;
+            padding: 30px 50px 30px 50px;
+        }
+        .teaser-wrapper h2 {
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .teaser-wrapper h3 {
+            color: #f7f7f7;
+            margin: 0;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        .teaser-wrapper h3:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            bottom: -10px;
+        }
+    </style>
 {/block}
 
 
-<style>
-    .delight-banner-wrapper {
-        position: relative;
-    }
-    .delight-banner-wrapper .banner-txt {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        text-align: center;
-    }
-    .delight-banner-wrapper .delight-headline {
-        color: #fff;
-        text-transform: uppercase;
-    }
-    .delight-banner-wrapper .delight-button {
-        background: #741427;
-        border: 1px solid #741427;
-        color: #fff;
-        text-transform: uppercase;
-        border-radius: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .delight-banner-wrapper .delight-button:hover {
-        background: #aa142e;
-        border: 1px solid #aa142e;
-    }
-    .delight-banner-wrapper .img img {
-        min-width: 100%;
-        min-height: 100%;
-    }
-</style>
+

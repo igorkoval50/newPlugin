@@ -33,7 +33,7 @@ class EmotionElementInstaller
             'CategoriesTeaserViArise',
             [
                 'xtype' => 'vi-arise-categories-teaser',
-                'name' => 'ViArise categories teaser',
+                'name' => 'Vi-Arise categories teaser',
                 'template' => 'vi_arise_categories_teaser'
             ]
         );
