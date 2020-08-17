@@ -327,36 +327,42 @@ class EmotionElementInstaller
         $advancedSliderElement->createDisplayField([
             'name' => 'vi_arise_info_one',
             'fieldLabel' => 'Element:',
-            'defaultValue' => 'Kategory Teaser 1'
+            'defaultValue' => 'Kategory Teaser 1',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createMediaField([
             'name' => 'vi_arise_image',
             'fieldLabel' => 'Image',
-            'valueField' => 'virtualPath'
+            'valueField' => 'virtualPath',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createComboBoxField([
             'fieldLabel' => 'Category',
             'name' =>  'vi_arise_button_link_element',
-            'xtype' => 'emotion-components-fields-category-selection'
+            'xtype' => 'emotion-components-fields-category-selection',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createTextField([
             'name' => 'vi_arise_headline',
-            'fieldLabel' => 'Headline'
+            'fieldLabel' => 'Headline',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createTextField([
             'name' => 'vi_arise_subline',
-            'fieldLabel' => 'Subline'
+            'fieldLabel' => 'Subline',
+            'allowBlank' => false
         ]);
 
         //second teaser
         $advancedSliderElement->createDisplayField([
             'name' => 'vi_arise_info_two',
             'fieldLabel' => 'Element:',
-            'defaultValue' => 'Kategory Teaser 2'
+            'defaultValue' => 'Kategory Teaser 2',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createMediaField([
@@ -364,51 +370,60 @@ class EmotionElementInstaller
             'helpTitle' => 'first teaser',
             'fieldLabel' => 'Image',
             'valueField' => 'virtualPath',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createComboBoxField([
             'fieldLabel' => 'Category',
             'name' =>  'vi_arise_button_link_element_second',
-            'xtype' => 'emotion-components-fields-category-selection'
+            'xtype' => 'emotion-components-fields-category-selection',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createTextField([
             'name' => 'vi_arise_headline_second',
-            'fieldLabel' => 'Headline'
+            'fieldLabel' => 'Headline',
+            'allowBlank' => false
         ]);
 
         $advancedSliderElement->createTextField([
             'name' => 'vi_arise_subline_second',
-            'fieldLabel' => 'Subline'
+            'fieldLabel' => 'Subline',
+            'allowBlank' => false
         ]);
 
         //third teaser
         $advancedSliderElement->createDisplayField([
             'name' => 'vi_arise_info_three',
             'fieldLabel' => 'Element:',
-            'defaultValue' => 'Kategory Teaser 3'
+            'defaultValue' => 'Kategory Teaser 3',
+            'allowBlank' => true
         ]);
         $advancedSliderElement->createMediaField([
             'name' => 'vi_arise_image_three',
             'helpTitle' => 'first teaser',
             'fieldLabel' => 'Image',
             'valueField' => 'virtualPath',
+            'allowBlank' => true
         ]);
 
         $advancedSliderElement->createComboBoxField([
             'fieldLabel' => 'Category',
             'name' =>  'vi_arise_button_link_element_three',
-            'xtype' => 'emotion-components-fields-category-selection'
+            'xtype' => 'emotion-components-fields-category-selection',
+            'allowBlank' => true
         ]);
 
         $advancedSliderElement->createTextField([
             'name' => 'vi_arise_headline_three',
-            'fieldLabel' => 'Headline'
+            'fieldLabel' => 'Headline',
+            'allowBlank' => true
         ]);
 
         $advancedSliderElement->createTextField([
             'name' => 'vi_arise_subline_three',
-            'fieldLabel' => 'Subline'
+            'fieldLabel' => 'Subline',
+            'allowBlank' => true
         ]);
     }
 }

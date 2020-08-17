@@ -84,8 +84,9 @@
                 {/block}
             </div>
         {/block}
+
         {block name="widgets_emotion_components_vimeo_element"}
-            <div class="teaser-container">
+            <div class="teaser-container {if $Data.vi_arise_image_three != ''} teaser-container-three{/if}">
                 <a href="{$Data.vi_arise_button_href}" class="teaser-wrapper">
         <span class="teaser-img">
             <img src="{$Data.vi_arise_image}" alt="banner-image">
@@ -106,15 +107,19 @@
         </span>
                 </a>
 
-                <a href="{$Data.vi_arise_button_href_three}" class="teaser-wrapper">
+                {if $Data.vi_arise_image_three != ''}
+
+                    <a href="{$Data.vi_arise_button_href_three}" class="teaser-wrapper">
         <span class="teaser-img">
             <img src="{$Data.vi_arise_image_three}" alt="banner-image">
         </span>
-                    <span class="banner-txt">
+                        <span class="banner-txt">
             <h2 class="teaser-headline">{$Data.vi_arise_headline_three}</h2>
             <h3 class="teaser-subline">{$Data.vi_arise_subline_three}</h3>
         </span>
-                </a>
+                    </a>
+                {/if}
+
             </div>
         {/block}
     </div>
@@ -218,6 +223,10 @@
             align-items: stretch;
         }
         .teaser-container .teaser-wrapper {
+            width: 50%;
+            padding: 0 10px;
+        }
+        .teaser-container-three .teaser-wrapper {
             width: 33.333%;
             padding: 0 10px;
         }
