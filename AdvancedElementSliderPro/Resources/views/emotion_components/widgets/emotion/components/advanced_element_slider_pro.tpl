@@ -87,7 +87,7 @@
 
         {block name="widgets_emotion_components_vimeo_element"}
             <div class="teaser-container {if $Data.vi_arise_image_three != ''} teaser-container-three{/if}">
-                <a href="{$Data.vi_arise_button_href}" class="teaser-wrapper">
+                <a href="{$Data.vi_arise_button_link_element}" class="teaser-wrapper">
         <span class="teaser-img">
             <img src="{$Data.vi_arise_image}" alt="banner-image">
         </span>
@@ -97,7 +97,7 @@
         </span>
                 </a>
 
-                <a href="{$Data.vi_arise_button_href_second}" class="teaser-wrapper">
+                <a href="{$Data.vi_arise_button_link_element_second}" class="teaser-wrapper">
         <span class="teaser-img">
             <img src="{$Data.vi_arise_image_second}" alt="banner-image">
         </span>
@@ -109,7 +109,7 @@
 
                 {if $Data.vi_arise_image_three != ''}
 
-                    <a href="{$Data.vi_arise_button_href_three}" class="teaser-wrapper">
+                    <a href="{$Data.vi_arise_button_link_element_three}" class="teaser-wrapper">
         <span class="teaser-img">
             <img src="{$Data.vi_arise_image_three}" alt="banner-image">
         </span>
@@ -119,7 +119,6 @@
         </span>
                     </a>
                 {/if}
-
             </div>
         {/block}
     </div>
