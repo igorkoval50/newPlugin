@@ -10,6 +10,7 @@
     </a>
 
     <style>
+        /*style for teaser */
         .teaser-wrapper, .teaser-wrapper span {
             display: block;
         }
@@ -20,9 +21,10 @@
             position: absolute;
             background: #A81756;
             width: 60%;
-            bottom: 10%;
+            bottom: 5%;
             left: 0;
             padding: 30px 50px 30px 50px;
+            text-align: left;
         }
         .teaser-wrapper h2 {
             font-weight: bold;
@@ -47,6 +49,12 @@
             background-color: #fff;
             display: block;
             bottom: -10px;
+        }
+        .teaser-img {
+            padding: 0 20px;
+        }
+        .teaser-img img {
+            width: 100%;
         }
     </style>
 {/block}

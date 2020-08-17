@@ -9,10 +9,22 @@
             <tag name="shopware.event_subscriber" />
         </service>
 
+        <service id="ced_element_slider_pro.kategories_teaser_handler" class="AdvancedElementSliderPro\ComponentHandler\KategoriesTeaserHandler">
+            <argument type="service" id="models"/>
+            <tag name="shopware_emotion.component_handler"/>
+        </service>
+
         <!-- Add TemplateRegistration subscriber-->
         <service id="advanced_element_slider_pro.subscriber.templates" class="AdvancedElementSliderPro\Subscriber\TemplateRegistration">
             <argument>%advanced_element_slider_pro.plugin_dir%</argument>
             <tag name="shopware.event_subscriber"/>
         </service>
+
+        <!-- Add TemplateRegistration subscriber-->
+        <service id="advanced_element_slider_pro.subscriber.templates" class="AdvancedElementSliderPro\Subscriber\TemplateRegistrationKategories">
+            <argument>%advanced_element_slider_pro.plugin_dir%</argument>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
     </services>
 </container>

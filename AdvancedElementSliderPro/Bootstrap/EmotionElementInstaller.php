@@ -322,5 +322,93 @@ class EmotionElementInstaller
             'supportText' => 'Change color classes MN-white, MN-purple, MN-orange',
             'allowBlank' => true
         ]);
+
+        //first teaser
+        $advancedSliderElement->createDisplayField([
+            'name' => 'vi_arise_info_one',
+            'fieldLabel' => 'Element:',
+            'defaultValue' => 'Kategory Teaser 1'
+        ]);
+
+        $advancedSliderElement->createMediaField([
+            'name' => 'vi_arise_image',
+            'fieldLabel' => 'Image',
+            'valueField' => 'virtualPath'
+        ]);
+
+        $advancedSliderElement->createComboBoxField([
+            'fieldLabel' => 'Category',
+            'name' =>  'vi_arise_button_link_element',
+            'xtype' => 'emotion-components-fields-category-selection'
+        ]);
+
+        $advancedSliderElement->createTextField([
+            'name' => 'vi_arise_headline',
+            'fieldLabel' => 'Headline'
+        ]);
+
+        $advancedSliderElement->createTextField([
+            'name' => 'vi_arise_subline',
+            'fieldLabel' => 'Subline'
+        ]);
+
+        //second teaser
+        $advancedSliderElement->createDisplayField([
+            'name' => 'vi_arise_info_two',
+            'fieldLabel' => 'Element:',
+            'defaultValue' => 'Kategory Teaser 2'
+        ]);
+
+        $advancedSliderElement->createMediaField([
+            'name' => 'vi_arise_image_second',
+            'helpTitle' => 'first teaser',
+            'fieldLabel' => 'Image',
+            'valueField' => 'virtualPath',
+        ]);
+
+        $advancedSliderElement->createComboBoxField([
+            'fieldLabel' => 'Category',
+            'name' =>  'vi_arise_button_link_element_second',
+            'xtype' => 'emotion-components-fields-category-selection'
+        ]);
+
+        $advancedSliderElement->createTextField([
+            'name' => 'vi_arise_headline_second',
+            'fieldLabel' => 'Headline'
+        ]);
+
+        $advancedSliderElement->createTextField([
+            'name' => 'vi_arise_subline_second',
+            'fieldLabel' => 'Subline'
+        ]);
+
+        //third teaser
+        $advancedSliderElement->createDisplayField([
+            'name' => 'vi_arise_info_three',
+            'fieldLabel' => 'Element:',
+            'defaultValue' => 'Kategory Teaser 3'
+        ]);
+        $advancedSliderElement->createMediaField([
+            'name' => 'vi_arise_image_three',
+            'helpTitle' => 'first teaser',
+            'fieldLabel' => 'Image',
+            'valueField' => 'virtualPath',
+        ]);
+
+        $advancedSliderElement->createComboBoxField([
+            'fieldLabel' => 'Category',
+            'name' =>  'vi_arise_button_link_element_three',
+            'xtype' => 'emotion-components-fields-category-selection'
+        ]);
+
+        $advancedSliderElement->createTextField([
+            'name' => 'vi_arise_headline_three',
+            'fieldLabel' => 'Headline'
+        ]);
+
+        $advancedSliderElement->createTextField([
+            'name' => 'vi_arise_subline_three',
+            'fieldLabel' => 'Subline'
+        ]);
     }
 }

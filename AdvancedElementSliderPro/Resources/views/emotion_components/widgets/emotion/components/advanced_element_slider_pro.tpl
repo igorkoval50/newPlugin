@@ -82,12 +82,45 @@
                         {/for}
                     </div>
                 {/block}
+            </div>
+        {/block}
+        {block name="widgets_emotion_components_vimeo_element"}
+            <div class="teaser-container">
+                <a href="{$Data.vi_arise_button_href}" class="teaser-wrapper">
+        <span class="teaser-img">
+            <img src="{$Data.vi_arise_image}" alt="banner-image">
+        </span>
+                    <span class="banner-txt">
+            <h2 class="teaser-headline">{$Data.vi_arise_headline}</h2>
+            <h3 class="teaser-subline">{$Data.vi_arise_subline}</h3>
+        </span>
+                </a>
 
+                <a href="{$Data.vi_arise_button_href_second}" class="teaser-wrapper">
+        <span class="teaser-img">
+            <img src="{$Data.vi_arise_image_second}" alt="banner-image">
+        </span>
+                    <span class="banner-txt">
+            <h2 class="teaser-headline">{$Data.vi_arise_headline_second}</h2>
+            <h3 class="teaser-subline">{$Data.vi_arise_subline_second}</h3>
+        </span>
+                </a>
+
+                <a href="{$Data.vi_arise_button_href_three}" class="teaser-wrapper">
+        <span class="teaser-img">
+            <img src="{$Data.vi_arise_image_three}" alt="banner-image">
+        </span>
+                    <span class="banner-txt">
+            <h2 class="teaser-headline">{$Data.vi_arise_headline_three}</h2>
+            <h3 class="teaser-subline">{$Data.vi_arise_subline_three}</h3>
+        </span>
+                </a>
             </div>
         {/block}
     </div>
 
     <style>
+        /*style for banner*/
         .banner-slider--box-link-content .subtitle,
         .banner-slider--box-link-content .title,
         .banner-slider--box-link-content .title2  {
@@ -131,6 +164,80 @@
         .banner-slider--box-link-content .MN-white,
         .banner-slider--box-link-content .BT-white {
             color: #FFFFFF;
+        }
+
+        /*style for teaser */
+        .teaser-wrapper, .teaser-wrapper span {
+            display: block;
+        }
+        .teaser-wrapper {
+            position: relative;
+        }
+        .teaser-wrapper .banner-txt {
+            position: absolute;
+            background: #A81756;
+            width: 60%;
+            bottom: 5%;
+            left: 0;
+            padding: 30px 50px 30px 50px;
+            text-align: left;
+        }
+        .teaser-wrapper h2 {
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .teaser-wrapper h3 {
+            color: #f7f7f7;
+            margin: 0;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        .teaser-wrapper h3:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            bottom: -10px;
+        }
+        .teaser-img {
+            padding: 0 20px;
+        }
+        .teaser-img img {
+            width: 100%;
+        }
+        .teaser-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .teaser-container .teaser-wrapper {
+            width: 33.333%;
+            padding: 0 10px;
+        }
+        .teaser-container .teaser-wrapper .banner-txt {
+            padding: 7px 10px;
+            bottom: 5%;
+        }
+        .teaser-container .teaser-wrapper h2 {
+            margin-bottom: 3px;
+        }
+        .teaser-container .teaser-wrapper h3:before {
+            bottom: -1px;
+        }
+        .teaser-container .teaser-img {
+            height: 100%;
+            padding: 0;
+        }
+        .teaser-container .teaser-img img {
+            min-height: 100%;
+            object-fit: cover;
         }
     </style>
 {/block}
