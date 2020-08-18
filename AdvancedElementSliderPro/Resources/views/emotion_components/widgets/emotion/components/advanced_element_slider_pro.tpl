@@ -46,10 +46,9 @@
                                             <div class="banner-slider--banner">
 
                                                 {block name="frontend_widgets_banner_slider_banner_picture"}
-                                                    {*<picture>*}
-                                                        {*{insert name="getSourceSet" source="{$Data.$slideImageFull}" class="banner-slider--image" max-size="2500"}*}
-                                                    {*</picture>*}
-                                                    <img class="banner-slider--image" src="{$Data.$slideImageFull}" alt="test">
+                                                    <picture>
+                                                        {insert name="getSourceSet" source="{$Data.$slideImageFull}" class="banner-slider--image" max-size="2500"}
+                                                    </picture>
                                                 {/block}
                                             </div>
                                         {/block}
@@ -57,8 +56,8 @@
 
                                         {block name="frontend_widgets_banner_slider_link"}
                                             <a href="{$Data.$slideLink1}"
-                                               class="banner-slider--box-link-content">
-                                                <div class="banner-slider--box-link-content-content">
+                                               class="banner-slider--box-link">
+                                                <div class="banner-slider--box-link-content custom-banner-box-link-pro">
                                                     <span class="subtitle {$Data.$slidePreLineColor}">
                                                         {$Data.$slidePreLine}
                                                     </span>
@@ -125,49 +124,43 @@
 
     <style>
         /*style for banner*/
-        .banner-slider--box-link-content .subtitle,
-        .banner-slider--box-link-content .title,
-        .banner-slider--box-link-content .title2  {
-            color: red;
-            font-size: 20px;
+        .custom-banner-box-link-pro .is--primary {
+            background-color: #FF9132 !important;
         }
-        .banner-slider--box-link-content .link {
-            color: red;
-            font-size: 20px;
-        }
-        .banner-slider--box-link-content .is--primary {
-            background-color: #FF9132;
-            color: #000;
-        }
-        .banner-slider--box-link-content .KT-black,
-        .banner-slider--box-link-content .Z1-black,
-        .banner-slider--box-link-content .Z2-black,
-        .banner-slider--box-link-content .MN-black {
-            color: #000000;
+        .custom-banner-box-link-pro .KT-black,
+        .custom-banner-box-link-pro .Z1-black,
+        .custom-banner-box-link-pro .Z2-black,
+        .custom-banner-box-link-pro .MN-black {
+            color: #000000 !important;
         }
 
-        .banner-slider--box-link-content .KT-purple,
-        .banner-slider--box-link-content .Z1-purple,
-        .banner-slider--box-link-content .Z2-purple,
-        .banner-slider--box-link-content .BT-purple,
-        .banner-slider--box-link-content .MN-purple {
-            color: #A81756;
+        .custom-banner-box-link-pro .KT-purple,
+        .custom-banner-box-link-pro .Z1-purple,
+        .custom-banner-box-link-pro .Z2-purple,
+        .custom-banner-box-link-pro .BT-purple,
+        .custom-banner-box-link-pro .MN-purple {
+            color: #A81756 !important;
         }
 
-        .banner-slider--box-link-content .BF-purple {
-            background: #A81756;
+        .custom-banner-box-link-pro .BF-purple {
+            background: #A81756 !important;
         }
 
-        .banner-slider--box-link-content .KT-orange,
-        .banner-slider--box-link-content .Z1-orange,
-        .banner-slider--box-link-content .Z2-orang,
-        .banner-slider--box-link-content .BT-orange {
-            color: #FF9132;
+        .custom-banner-box-link-pro .KT-orange,
+        .custom-banner-box-link-pro .Z1-orange,
+        .custom-banner-box-link-pro .Z2-orang,
+        .custom-banner-box-link-pro .BT-orange {
+            color: #FF9132 !important;
         }
 
-        .banner-slider--box-link-content .MN-white,
-        .banner-slider--box-link-content .BT-white {
-            color: #FFFFFF;
+        .custom-banner-box-link-pro .MN-white,
+        .custom-banner-box-link-pro .BT-white {
+            color: #FFFFFF !important;
+        }
+        @media screen and (max-width: 1024px) and (min-width: 480px) {
+            .banner-slider--item .custom-banner-box-link-pro .title {
+                font-size: 30px;
+            }
         }
 
         /*style for teaser */

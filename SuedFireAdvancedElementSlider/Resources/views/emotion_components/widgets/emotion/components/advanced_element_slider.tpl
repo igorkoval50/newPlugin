@@ -35,7 +35,7 @@
                             {assign var='slideButtonBackground' value="advanced_element_slider_button_text_slide_background`$i`"}
                             {assign var='slideModelNameColor' value="advanced_element_slider_model_name_slide_color`$i`"}
 
-                             {*Slide output start*}
+                            {*Slide output start*}
                             {if !empty($Data.$slideLine1)}
                                 {block name="frontend_widgets_banner_slider_item"}
                                     <div class="banner-slider--item image-slider--item"
@@ -46,10 +46,9 @@
                                             <div class="banner-slider--banner">
 
                                                 {block name="frontend_widgets_banner_slider_banner_picture"}
-                                                    {*<picture>*}
-                                                        {*{insert name="getSourceSet" source="{$Data.$slideImageFull}" class="banner-slider--image" max-size="2500"}*}
-                                                    {*</picture>*}
-                                                    <img class="banner-slider--image" src="{$Data.$slideImageFull}" alt="test">
+                                                    <picture>
+                                                        {insert name="getSourceSet" source="{$Data.$slideImageFull}" class="banner-slider--image" max-size="2500"}
+                                                    </picture>
                                                 {/block}
                                             </div>
                                         {/block}
@@ -57,8 +56,8 @@
 
                                         {block name="frontend_widgets_banner_slider_link"}
                                             <a href="{$Data.$slideLink1}"
-                                               class="banner-slider--box-link-content">
-                                                <div class="banner-slider--box-link-content-content">
+                                               class="banner-slider--box-link">
+                                                <div class="banner-slider--box-link-content custom-banner-box-link">
                                                     <span class="subtitle {$Data.$slidePreLineColor}">
                                                         {$Data.$slidePreLine}
                                                     </span>
@@ -88,49 +87,43 @@
     </div>
 
     <style>
-        .banner-slider--box-link-content .subtitle,
-        .banner-slider--box-link-content .title,
-        .banner-slider--box-link-content .title2  {
-            color: red;
-            font-size: 20px;
+        .custom-banner-box-link .is--primary {
+            background-color: #FF9132 !important;
         }
-        .banner-slider--box-link-content .link {
-            color: red;
-            font-size: 20px;
-        }
-        .banner-slider--box-link-content .is--primary {
-            background-color: #FF9132;
-            color: #000;
-        }
-        .banner-slider--box-link-content .KT-black,
-        .banner-slider--box-link-content .Z1-black,
-        .banner-slider--box-link-content .Z2-black,
-        .banner-slider--box-link-content .MN-black {
-            color: #000000;
+        .custom-banner-box-link .KT-black,
+        .custom-banner-box-link .Z1-black,
+        .custom-banner-box-link .Z2-black,
+        .custom-banner-box-link .MN-black {
+            color: #000000 !important;
         }
 
-        .banner-slider--box-link-content .KT-purple,
-        .banner-slider--box-link-content .Z1-purple,
-        .banner-slider--box-link-content .Z2-purple,
-        .banner-slider--box-link-content .BT-purple,
-        .banner-slider--box-link-content .MN-purple {
-            color: #A81756;
+        .custom-banner-box-link .KT-purple,
+        .custom-banner-box-link .Z1-purple,
+        .custom-banner-box-link .Z2-purple,
+        .custom-banner-box-link .BT-purple,
+        .custom-banner-box-link .MN-purple {
+            color: #A81756 !important;
         }
 
-        .banner-slider--box-link-content .BF-purple {
-            background: #A81756;
+        .custom-banner-box-link .BF-purple {
+            background: #A81756 !important;
         }
 
-        .banner-slider--box-link-content .KT-orange,
-        .banner-slider--box-link-content .Z1-orange,
-        .banner-slider--box-link-content .Z2-orang,
-        .banner-slider--box-link-content .BT-orange {
-            color: #FF9132;
+        .custom-banner-box-link .KT-orange,
+        .custom-banner-box-link .Z1-orange,
+        .custom-banner-box-link .Z2-orang,
+        .custom-banner-box-link .BT-orange {
+            color: #FF9132 !important;
         }
 
-        .banner-slider--box-link-content .MN-white,
-        .banner-slider--box-link-content .BT-white {
-            color: #FFFFFF;
+        .custom-banner-box-link .MN-white,
+        .custom-banner-box-link .BT-white {
+            color: #FFFFFF !important;
+        }
+        @media screen and (max-width: 1024px) and (min-width: 480px) {
+            .banner-slider--item .custom-banner-box-link .title {
+                font-size: 30px;
+            }
         }
     </style>
 {/block}
