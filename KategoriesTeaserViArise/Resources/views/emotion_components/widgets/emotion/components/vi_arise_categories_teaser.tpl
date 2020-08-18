@@ -16,22 +16,25 @@
         }
         .teaser-wrapper {
             position: relative;
+            border: 10px solid #fff;
         }
         .teaser-wrapper .banner-txt {
             position: absolute;
             background: #A81756;
-            width: 60%;
-            bottom: 5%;
+            width: 100%;
+            bottom: 0;
             left: 0;
-            padding: 30px 50px 30px 50px;
             text-align: left;
+            min-height: 88px;
+            padding: 15px 0 0 37px;
         }
         .teaser-wrapper h2 {
             font-weight: bold;
             color: #fff;
             margin: 0;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             text-transform: uppercase;
+            font-size: 19px;
         }
         .teaser-wrapper h3 {
             color: #f7f7f7;
@@ -40,6 +43,7 @@
             text-transform: uppercase;
             position: relative;
             display: inline-block;
+            font-size: 16px;
         }
         .teaser-wrapper h3:before {
             content: "";
@@ -48,10 +52,7 @@
             height: 1px;
             background-color: #fff;
             display: block;
-            bottom: -10px;
-        }
-        .teaser-img {
-            padding: 0 20px;
+            bottom: -3px;
         }
         .teaser-img img {
             width: 100%;

@@ -180,18 +180,19 @@
         .teaser-wrapper .banner-txt {
             position: absolute;
             background: #A81756;
-            width: 60%;
-            bottom: 5%;
+            width: 100%;
+            bottom: 0;
             left: 0;
-            padding: 30px 50px 30px 50px;
             text-align: left;
+            min-height: 88px;
         }
         .teaser-wrapper h2 {
             font-weight: bold;
             color: #fff;
             margin: 0;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             text-transform: uppercase;
+            font-size: 19px;
         }
         .teaser-wrapper h3 {
             color: #f7f7f7;
@@ -200,6 +201,7 @@
             text-transform: uppercase;
             position: relative;
             display: inline-block;
+            font-size: 16px;
         }
         .teaser-wrapper h3:before {
             content: "";
@@ -208,11 +210,9 @@
             height: 1px;
             background-color: #fff;
             display: block;
-            bottom: -10px;
+            bottom: -3px;
         }
-        .teaser-img {
-            padding: 0 20px;
-        }
+
         .teaser-img img {
             width: 100%;
         }
@@ -220,24 +220,28 @@
             display: flex;
             justify-content: space-between;
             align-items: stretch;
+            padding-left: 12px;
         }
         .teaser-container .teaser-wrapper {
             width: 50%;
-            padding: 0 10px;
+            padding: 0;
         }
         .teaser-container-three .teaser-wrapper {
             width: 33.333%;
-            padding: 0 10px;
+            height: 425px;
+            border: 10px solid #fff;
+            margin-right: 12px;
         }
         .teaser-container .teaser-wrapper .banner-txt {
-            padding: 7px 10px;
-            bottom: 5%;
+            padding: 15px 0 0 37px;
+            bottom: 0;
+            width: 100%;
         }
         .teaser-container .teaser-wrapper h2 {
             margin-bottom: 3px;
         }
         .teaser-container .teaser-wrapper h3:before {
-            bottom: -1px;
+            bottom: -3px;
         }
         .teaser-container .teaser-img {
             height: 100%;
