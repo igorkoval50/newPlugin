@@ -1,5 +1,5 @@
 {block name="frontend_widgets_banner_slider"}
-    <div class="emotion--banner-slider image-slider"
+    <div class="emotion--banner-slider image-slider image-slider-banner-pro"
          data-image-slider="true"
          data-thumbnails="false"
          data-lightbox="false"
@@ -7,9 +7,8 @@
          data-animationSpeed="500"
          data-arrowControls="{$Data.showArrows}}"
          data-autoSlideInterval="{$Data.advanced_element_slider_settings_slideduration}"
-         data-autoSlide="true"
+         data-autoSlide="false"
          data-imageSelector=".image-slider--item">
-
 
         {block name="frontend_widgets_banner_slider_container"}
             <div class="banner-slider--container image-slider--container">
@@ -124,6 +123,10 @@
 
     <style>
         /*style for banner*/
+        .custom-banner-box-link-pro {
+            position: absolute;
+            top: 140px;
+        }
         .custom-banner-box-link-pro .is--primary {
             background-color: #FF9132 !important;
         }
@@ -157,10 +160,8 @@
         .custom-banner-box-link-pro .BT-white {
             color: #FFFFFF !important;
         }
-        @media screen and (max-width: 1024px) and (min-width: 480px) {
-            .banner-slider--item .custom-banner-box-link-pro .title {
-                font-size: 30px;
-            }
+        .image-slider-banner-pro {
+            min-height: 980px;
         }
 
         /*style for teaser */
@@ -186,6 +187,7 @@
             margin-bottom: 5px;
             text-transform: uppercase;
             font-size: 19px;
+            font-family: 'Gudea', sans-serif;
         }
         .teaser-wrapper h3 {
             color: #f7f7f7;
@@ -195,6 +197,7 @@
             position: relative;
             display: inline-block;
             font-size: 16px;
+            font-family: 'Gudea', sans-serif;
         }
         .teaser-wrapper h3:before {
             content: "";
@@ -214,6 +217,9 @@
             justify-content: space-between;
             align-items: stretch;
             padding-left: 12px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
         .teaser-container .teaser-wrapper {
             width: 50%;
@@ -222,7 +228,7 @@
         .teaser-container-three .teaser-wrapper {
             width: 33.333%;
             height: 425px;
-            border: 10px solid #fff;
+            border: 20px solid #fff;
             margin-right: 12px;
         }
         .teaser-container .teaser-wrapper .banner-txt {
@@ -243,6 +249,85 @@
         .teaser-container .teaser-img img {
             min-height: 100%;
             object-fit: cover;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .teaser-container-three .teaser-wrapper {
+                height: 325px;
+            }
+            .image-slider-banner-pro {
+                min-height: 850px;
+            }
+            .custom-banner-box-link-pro {
+                top: 74px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 480px) {
+            .banner-slider--item .custom-banner-box-link-pro .title {
+                font-size: 30px;
+            }
+            .teaser-container-three .teaser-wrapper {
+                height: 294px;
+            }
+            .image-slider-banner-pro {
+                min-height: 700px;
+            }
+            .custom-banner-box-link-pro {
+                top: 30px;
+            }
+            .teaser-wrapper h2 {
+                font-size: 15px;
+            }
+            .teaser-wrapper h2 {
+                font-size: 14px;
+            }
+            .teaser-container .teaser-wrapper .banner-txt {
+                padding: 12px 0 0 37px;
+            }
+            .custom-banner-box-link-pro {
+                width: 378px;
+                right: 43px
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .teaser-container .teaser-wrapper .banner-txt {
+                padding: 15px 0 0 20px;
+            }
+            .teaser-container-three .teaser-wrapper {
+                border: 0;
+            }
+            .teaser-container-three .teaser-wrapper {
+                height: 240px;
+            }
+            .image-slider-banner-pro {
+                min-height: auto;
+            }
+            .teaser-container {
+                position: static;
+            }
+            .custom-banner-box-link-pro {
+                position: static;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .teaser-container {
+                padding-left: 0;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            .teaser-container-three .teaser-wrapper {
+                height: 320px;
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+            .teaser-wrapper h2 {
+                font-size: 16px;
+            }
+            .teaser-wrapper h3 {
+                font-size: 15px;
+            }
         }
     </style>
 {/block}
