@@ -85,46 +85,6 @@
             </div>
         {/block}
     </div>
-
-    <style>
-        .custom-banner-box-link .is--primary {
-            background-color: #FF9132 !important;
-        }
-        .custom-banner-box-link .KT-black,
-        .custom-banner-box-link .Z1-black,
-        .custom-banner-box-link .Z2-black,
-        .custom-banner-box-link .MN-black {
-            color: #000000 !important;
-        }
-
-        .custom-banner-box-link .KT-purple,
-        .custom-banner-box-link .Z1-purple,
-        .custom-banner-box-link .Z2-purple,
-        .custom-banner-box-link .BT-purple,
-        .custom-banner-box-link .MN-purple {
-            color: #A81756 !important;
-        }
-
-        .custom-banner-box-link .BF-purple {
-            background: #A81756 !important;
-        }
-
-        .custom-banner-box-link .KT-orange,
-        .custom-banner-box-link .Z1-orange,
-        .custom-banner-box-link .Z2-orang,
-        .custom-banner-box-link .BT-orange {
-            color: #FF9132 !important;
-        }
-
-        .custom-banner-box-link .MN-white,
-        .custom-banner-box-link .BT-white {
-            color: #FFFFFF !important;
-        }
-        @media screen and (max-width: 1024px) and (min-width: 480px) {
-            .banner-slider--item .custom-banner-box-link .title {
-                font-size: 30px;
-            }
-        }
-    </style>
+    
 {/block}
 

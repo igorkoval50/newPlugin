@@ -1,0 +1,156 @@
+.uxgo-teaser {
+  .emotion--product-slider {
+    background:none;
+
+    .product-slider {
+
+      .product--details {
+        .product--title {
+          .unitize(height, 25);
+        }
+
+        .price--unit {
+          height:0;
+        }
+      }
+    }
+  }
+
+  .teaser-title {
+    position:absolute!important;
+    .unitize(top, 250)!important;
+    .unitize(left, 200)!important;
+
+    .emotion--html {
+      overflow:visible;
+
+      p {
+        .unitize(font-size, 40);
+        color: @brand-primary;
+        text-transform: uppercase;
+        width:30%;
+        text-align:center;
+        .unitize(line-height, 50);
+      }
+    }
+  }
+
+  .teaser-btn {
+    position:absolute!important;
+    .unitize(top, 370)!important;
+    .unitize(left, 200)!important;
+
+    .btn-men {
+      .unitize(margin-left, 25);
+    }
+
+    .btn{
+      background-color: #cbddf3;
+      color:@brand-secondary;
+
+      &:after {
+        content: "\203a";
+        .unitize(font-size, 20);
+        .unitize(margin-left, 14);
+      }
+    }
+  }
+}
+
+
+.page-wrap .content-main {
+  box-shadow: none;
+}
+
+/*style for custom teaser */
+.teaser-wrapper-kategories {
+  display: block;
+  position: relative;
+  .banner-txt {
+    position: absolute;
+    background: #A81756;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    min-height: 88px;
+    padding: 15px 0 0 37px;
+  }
+  span {
+    display: block;
+  }
+  h2 {
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: 'Gudea', sans-serif;
+  }
+  h3 {
+    color: #f7f7f7;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gudea', sans-serif;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      display: block;
+      bottom: -3px;
+    }
+  }
+  .teaser-img img {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: @tabletLandscapeViewportWidth) {
+  .teaser-wrapper-kategories {
+    h2 {
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    .teaser-img img {
+      height: 295px;
+    }
+  }
+}
+
+  @media screen and (max-width: @tabletViewportWidth) {
+    .teaser-wrapper-kategories {
+      .banner-txt {
+        padding: 15px 0 0 20px;
+      }
+      .teaser-img img {
+        height: 240px;
+      }
+    }
+  }
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+  .image-slider-banner-pro {
+    .teaser-container {
+      .teaser-wrapper {
+        height: 232px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        .banner-txt {
+          min-height: 88px;
+        }
+      }
+    }
+  }
+}

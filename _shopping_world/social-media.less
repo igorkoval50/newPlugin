@@ -1,0 +1,62 @@
+.home--social-media {
+  border-bottom:none;
+  border-top:none;
+
+
+  .social-media {
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      width:100%;
+      .unitize(padding-left, 0);
+      .unitize(margin-left, 0);
+
+
+      @media screen and (min-width: @desktopViewportWidth) {
+        .unitize(padding-left, 0);
+      }
+
+      a {
+        color: @text-color;
+
+        &:hover {
+          .icomoon-facebook, .icomoon-instagram, .icomoon-pinterest, .icomoon-youtube, .social-media--text {
+            color: @brand-primary;
+
+            span {
+              color: @brand-primary;
+            }
+          }
+        }
+      }
+
+     .icomoon-facebook, .icomoon-instagram, .icomoon-pinterest, .icomoon-youtube {
+      .unitize(font-size, 40);
+      float:left;
+    }
+
+    .social-media--text {
+      .unitize(font-size, 12);
+      text-transform:uppercase;
+      float:left;
+      .unitize(margin-top, 12);
+      .unitize(margin-left, 16);
+      display:none;
+
+      @media screen and (min-width: @desktopViewportWidth) {
+        display:block;
+      }
+    }
+
+    @media screen and (min-width: @phoneLandscapeViewportWidth) {
+      .icomoon-facebook, .icomoon-instagram, .icomoon-pinterest, .icomoon-youtube {
+        .unitize(font-size, 56);
+      }
+
+      .social-media--text {
+        .unitize(font-size, 16);
+        .unitize(margin-top, 20);
+      }
+    }
+  }
+}

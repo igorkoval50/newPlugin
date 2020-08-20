@@ -1,0 +1,82 @@
+.emotion--newsletter-element {
+
+  img {
+    width: 100%;
+  }
+
+  .newsletter-form {
+    position:absolute;
+    .unitize(top, 100);
+    .unitize(right, 50);
+    color:white;
+
+    @media screen and (min-width: @phoneLandscapeViewportWidth) {
+      .unitize(top, 30);
+    }
+
+    @media screen and (min-width: @tabletViewportWidth) {
+      .unitize(top, 50);
+    }
+
+    @media screen and (min-width: @tabletLandscapeViewportWidth) {
+      .unitize(top, 20);
+    }
+
+    @media screen and (min-width: @desktopViewportWidth) {
+      .unitize(top, 80);
+    }
+
+    .newsletter--title {
+      .unitize(font-size, 24);
+      text-transform:uppercase;
+      .unitize(margin-bottom, 8);
+
+      @media screen and (min-width: @tabletViewportWidth) {
+        .unitize(margin-bottom, 20);
+      }
+      @media screen and (min-width: @tabletLandscapeViewportWidth) {
+        .unitize(margin-bottom, 16);
+      }
+    }
+
+    .newsletter--text {
+      .unitize(font-size, 16);
+      .unitize(margin-bottom, 8);
+
+      @media screen and (min-width: @tabletViewportWidth) {
+        .unitize(margin-bottom, 20);
+      }
+      @media screen and (min-width: @tabletLandscapeViewportWidth) {
+        .unitize(margin-bottom, 16);
+      }
+    }
+
+    input[type="email"] {
+      background:white;
+      border:none;
+      border-radius:0;
+      box-shadow:none;
+    }
+
+    .newsletter--field {
+      color:@text-color;
+    }
+
+    .btn {
+      background: @highlight-error;
+      display:block;
+      .unitize(margin-top, 16);
+
+      @media screen and (min-width: @tabletViewportWidth) {
+        .unitize(margin-top, 32);
+      }
+      @media screen and (min-width: @tabletLandscapeViewportWidth) {
+        .unitize(margin-top, 24);
+      }
+
+      &:hover {
+        background:@highlight-error;
+      }
+    }
+  }
+}

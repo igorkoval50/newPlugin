@@ -1,0 +1,227 @@
+/*style for banner*/
+.custom-banner-box-link-pro {
+  position: absolute;
+  top: 140px;
+  .is--primary {
+    background-color: #FF9132 !important;
+  }
+  .KT-black, .Z1-black, .Z2-black, .MN-black {
+    color: #000000 !important;
+  }
+  .KT-black, .Z1-black, .Z2-black, .MN-black {
+    color: #000000 !important;
+  }
+  .KT-purple, .Z1-purple, .Z2-purple, .BT-purple, .MN-purple {
+    color: #A81756 !important;
+  }
+  .BF-purple {
+    background: #A81756 !important;
+  }
+  .KT-orange, .Z1-orange, .Z2-orang, .BT-orange {
+    color: #FF9132 !important;
+  }
+  .MN-white, .BT-white {
+    color: #FFFFFF !important;
+  }
+}
+.image-slider-banner-pro {
+  min-height: 980px;
+}
+
+/*style for teaser */
+.teaser-wrapper {
+  position: relative;
+  .banner-txt {
+    position: absolute;
+    background: #A81756;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    text-align: left;
+    min-height: 88px;
+  }
+  span {
+    display: block;
+  }
+  h2 {
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: 'Gudea', sans-serif;
+  }
+  h3 {
+    color: #f7f7f7;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gudea', sans-serif;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      display: block;
+      bottom: -3px;
+    }
+  }
+}
+.teaser-img img {
+  width: 100%;
+}
+.teaser-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-left: 12px;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  .teaser-wrapper {
+    width: 50%;
+    padding: 0;
+  }
+}
+.teaser-container-three {
+  .teaser-wrapper {
+    width: 33.333%;
+    height: 425px;
+    border: 20px solid #fff;
+    margin-right: 12px;
+  }
+}
+.teaser-container {
+  .teaser-wrapper {
+    .banner-txt {
+      padding: 15px 0 0 37px;
+      bottom: -10px;
+      width: 100%;
+    }
+  }
+}
+.teaser-container {
+  .teaser-wrapper {
+    h2 {
+      margin-bottom: 3px;
+    }
+    h3:before {
+      bottom: -3px;
+    }
+  }
+  .teaser-img {
+    height: 100%;
+    padding: 0;
+    img {
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .image-slider-banner-pro {
+    .teaser-container {
+      bottom: 0;
+    }
+  }
+  .image-slider-banner-pro {
+    min-height: 850px;
+  }
+  .custom-banner-box-link-pro {
+    top: 74px;
+  }
+  .teaser-container {
+    bottom: 0;
+    .teaser-wrapper {
+      height: 325px;
+      h2 {
+        width: 90%;
+      }
+      .banner-txt {
+        min-height: 104px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @tabletLandscapeViewportWidth) and (min-width: @phoneLandscapeViewportWidth) {
+  .image-slider-banner-pro {
+    min-height: 700px;
+  }
+  .banner-slider--item .custom-banner-box-link-pro .title {
+    font-size: 30px;
+  }
+  .teaser-container-three .teaser-wrapper {
+    height: 294px;
+  }
+  .custom-banner-box-link-pro {
+    top: 10px;
+  }
+  .teaser-wrapper h2 {
+    font-size: 15px;
+  }
+  .teaser-wrapper h3 {
+    font-size: 14px;
+  }
+  .teaser-container {
+    bottom: -7px;
+    .teaser-wrapper {
+      .banner-txt {
+        min-height: 88px;
+        padding: 12px 0 0 25px;
+      }
+    }
+  }
+  .custom-banner-box-link-pro {
+    width: 378px;
+    right: 43px
+  }
+}
+
+@media screen and (max-width: @tabletViewportWidth) {
+  .image-slider-banner-pro {
+    min-height: auto;
+  }
+  .custom-banner-box-link-pro {
+    position: static;
+  }
+
+  .teaser-container {
+    position: static;
+    padding-left: 0;
+    .teaser-wrapper {
+      height: 240px;
+      border: 0;
+      .banner-txt {
+        padding: 15px 0 0 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+  .teaser-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .teaser-wrapper {
+      height: 320px;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-right: 0;
+
+      h2 {
+        font-size: 16px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+    }
+  }
+}

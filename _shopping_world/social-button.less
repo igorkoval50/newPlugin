@@ -1,0 +1,36 @@
+.social-element {
+  background: #A81756;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 63px;
+  max-width: 370px;
+  .img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+    }
+  }
+  .social-text {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 19px
+  }
+}
+
+@media screen and (max-width: @tabletViewportWidth) {
+  .social-element {
+    .social-text {
+      font-size: 14px
+    }
+  }
+}

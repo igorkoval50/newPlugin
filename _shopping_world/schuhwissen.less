@@ -1,0 +1,110 @@
+.emotion--schuhwissen-element {
+    .unitize(margin-top, 0);
+
+    @media screen and (min-width: @tabletLandscapeViewportWidth) {
+        .unitize(margin-top, 32);
+    }
+
+    @media screen and (min-width: @desktopViewportWidth) {
+        .unitize(margin-top, 76);
+    }
+
+    .schuhwissen--text {
+        .title {
+            text-transform:uppercase;
+            .unitize(font-size, 24);
+            .unitize(line-height, 24);
+            .unitize(letter-spacing, 1);
+            text-align:center;
+
+            @media screen and (min-width: @tabletViewportWidth) {
+                .unitize(font-size, 40);
+                .unitize(line-height, 40);
+                text-align:left;
+            }
+        }
+
+        .desc {
+            .unitize(font-size, 16);
+        }
+    }
+
+    .schuhwissen--table {
+        border:2px solid @brand-primary;
+        float:left;
+        width:100%;
+
+        .table--image {
+            float:left;
+            text-align:center;
+            width:auto;
+            border-right:2px solid @brand-primary;
+            display:none;
+            //.unitize-padding(16,0,16,0);
+
+            @media screen and (min-width: @tabletViewportWidth) {
+                display:block;
+            }
+
+            .icomoon-schuhwissen_passform {
+                .unitize(font-size, 71);
+            }
+            .icomoon-schuhwissen_groesse {
+                .unitize(font-size, 48);
+            }
+        }
+
+        .table--image-size {
+            .unitize-padding(27,0,27,0);
+        }
+
+        .table--info {
+            float:left;
+            width:100%;
+            position:relative;
+
+            @media screen and (min-width: @tabletViewportWidth) {
+                width:70%;
+            }
+
+            .table--info-inner {
+                .unitize-padding(24, 8, 100, 8);
+
+                .table--title {
+                    border-bottom:1px solid @brand-secondary-dark;
+                    .unitize(padding-bottom, 16);
+
+                    p {
+                        .unitize(margin-bottom, 0);
+                    }
+                }
+
+                .table--download {
+                    color:@gray;
+                    .unitize(padding-top, 16);
+                    p {
+                        .unitize(margin-top, 0);
+                        .unitize(margin-bottom, 0);
+                        float:left;
+                    }
+
+                    a {
+                        float:right;
+                        .unitize(font-size, 32);
+                        .unitize(margin-top, 0);
+                        color:@brand-primary;
+                    }
+                }
+
+                .table--title, .table--download {
+                    height:50%;
+                    float:left;
+                    width:100%;
+                    text-transform:uppercase;
+                    .unitize(font-size, 16);
+                    .unitize(letter-spacing, 1);
+                }
+            }
+        }
+    }
+}

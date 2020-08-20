@@ -1,0 +1,109 @@
+.emotion--text-button {
+  margin-top:0;
+
+  .text-button--text {
+    .unitize(padding-right, 0);
+
+    @media screen and (min-width: @desktopViewportWidth) {
+      .unitize(padding-right, 32);
+    }
+
+    .text-button--title {
+      .unitize(font-size, 18);
+      text-transform:uppercase;
+      .unitize(line-height, 24);
+      .unitize(letter-spacing, 2);
+      //.unitize(height, 80);
+
+      @media screen and (min-width: @desktopViewportWidth) {
+        .unitize(font-size, 32);
+        .unitize(line-height, 40);
+        .unitize(margin-top, 32);
+        .unitize(margin-bottom, 32);
+      }
+    }
+
+    .text-button--description {
+      .unitize(font-size, 14);
+
+      @media screen and (min-width: @desktopViewportWidth) {
+        .unitize(font-size, 16);
+        padding-right:30%;
+      }
+    }
+
+    .btn-link {
+      width:100%;
+      text-align:center;
+
+      @media screen and (min-width: @phoneLandscapeViewportWidth) {
+        width:auto;
+        text-align:left;
+      }
+
+      @media screen and (min-width: @tabletLandscapeViewportWidth) {
+        .unitize(margin-top, 72);
+      }
+
+      @media screen and (min-width: @desktopViewportWidth) {
+        .unitize(margin-top, 64);
+      }
+    }
+  }
+}
+
+.pic--text-button {
+  .emotion--text-button {
+    .text-button--text {
+      .btn-link {
+        width:100%;
+        text-align:center;
+
+        @media screen and (min-width: @tabletViewportWidth) {
+          width:auto;
+          text-align:left;
+        }
+      }
+
+      .text-button--title {
+          .unitize(margin-top, 16);
+
+        @media screen and (min-width: @tabletLandscapeViewportWidth) {
+          height:auto;
+          .unitize(font-size, 24);
+          .unitize(line-height, 30);
+        }
+
+        @media screen and (min-width: @desktopViewportWidth) {
+          .unitize(font-size, 18);
+          .unitize(line-height, 24);
+          .unitize(height, 80);
+          .unitize(margin-bottom, 0);
+        }
+      }
+
+      .text-button--description {
+        height:auto;
+        @media screen and (min-width: @tabletViewportWidth) {
+          .unitize(height, 110);
+        }
+
+        @media screen and (min-width: @tabletLandscapeViewportWidth) {
+          height:auto;
+          .unitize(font-size, 16);
+        }
+
+        @media screen and (min-width: @desktopViewportWidth) {
+          .unitize(height, 160);
+          .unitize(font-size, 14);
+        }
+      }
+    }
+  }
+
+  .banner--image {
+      @media screen and (min-width: @tabletLandscapeViewportWidth) {
+        .unitize(padding-bottom, 30);
+      }
+  }
+}
