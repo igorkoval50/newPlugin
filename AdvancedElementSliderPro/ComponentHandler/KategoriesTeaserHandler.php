@@ -34,12 +34,12 @@ class KategoriesTeaserHandler implements ComponentHandlerInterface
         $elementData = $element->getConfig()->getAll();
         $categoryId = $elementData ? $elementData['vi_arise_button_link_element'] : null;
         $categoryIdTwo = $elementData ? $elementData['vi_arise_button_link_element_second'] : null;
-        $categoryIdThree = $elementData ? $elementData['vi_arise_button_link_element_three'] : null;
+//        $categoryIdThree = $elementData ? $elementData['vi_arise_button_link_element_three'] : null;
 
         /** @var Category $category */
         $category = $this->modelManager->getRepository(Category::class)->find($categoryId);
         $categoryTwo = $this->modelManager->getRepository(Category::class)->find($categoryIdTwo);
-        $categoryThree = $this->modelManager->getRepository(Category::class)->find($categoryIdThree);
+//        $categoryThree = $this->modelManager->getRepository(Category::class)->find($categoryIdThree);
 
         if ($category->getBlog()) {
             $viAriseButtonHref = sprintf(self::URL_MASK_TEMPLATE, 'blog', $categoryId);
@@ -53,21 +53,29 @@ class KategoriesTeaserHandler implements ComponentHandlerInterface
             $viAriseButtonHrefTwo = sprintf(self::URL_MASK_TEMPLATE, 'cat', $categoryIdTwo);
         }
 
-        if ($categoryThree->getBlog()) {
-            $viAriseButtonHrefThree = sprintf(self::URL_MASK_TEMPLATE, 'blog', $categoryIdThree);
-        } else {
-            $viAriseButtonHrefThree = sprintf(self::URL_MASK_TEMPLATE, 'cat', $categoryIdThree);
-        }
+//        if ($categoryThree->getBlog()) {
+//            $viAriseButtonHrefThree = sprintf(self::URL_MASK_TEMPLATE, 'blog', $categoryIdThree);
+//        } else {
+//            $viAriseButtonHrefThree = sprintf(self::URL_MASK_TEMPLATE, 'cat', $categoryIdThree);
+//        }
 
         if (!empty($categoryId)) {
             $element->getData()->set('vi_arise_button_link_element', $viAriseButtonHref);
-            $element->getData()->set('vi_arise_button_link_element_second', $viAriseButtonHrefTwo);
-            $element->getData()->set('vi_arise_button_link_element_three', $viAriseButtonHrefThree);
         } else {
             $element->getData()->set('vi_arise_button_link_element', $categoryId);
-            $element->getData()->set('vi_arise_button_link_element_second', $categoryIdTwo);
-            $element->getData()->set('vi_arise_button_link_element_three', $categoryIdThree);
         }
+
+        if (!empty($categoryIdTwo)) {
+            $element->getData()->set('vi_arise_button_link_element_second', $viAriseButtonHrefTwo);
+        } else {
+            $element->getData()->set('vi_arise_button_link_element_second', $categoryIdTwo);
+        }
+
+//        if (!empty($categoryIdThree)) {
+//            $element->getData()->set('vi_arise_button_link_element_three', $viAriseButtonHrefThree);
+//        } else {
+//            $element->getData()->set('vi_arise_button_link_element_three', $categoryIdThree);
+//        }
     }
 
     public function handle(ResolvedDataCollection $collection, Element $element, ShopContextInterface $context)

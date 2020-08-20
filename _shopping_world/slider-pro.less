@@ -74,6 +74,8 @@
 }
 .teaser-img img {
   width: 100%;
+  max-height: 425px;
+  background-size: cover;
 }
 .teaser-container {
   display: flex;
@@ -88,12 +90,15 @@
     padding: 0;
   }
 }
+.teaser-container-three, .teaser-container  {
+  .teaser-wrapper {
+    border: 20px solid #fff;
+    margin-right: 12px;
+  }
+}
 .teaser-container-three {
   .teaser-wrapper {
     width: 33.333%;
-    height: 425px;
-    border: 20px solid #fff;
-    margin-right: 12px;
   }
 }
 .teaser-container {
@@ -139,7 +144,6 @@
   .teaser-container {
     bottom: 0;
     .teaser-wrapper {
-      height: 325px;
       h2 {
         width: 90%;
       }
@@ -157,8 +161,10 @@
   .banner-slider--item .custom-banner-box-link-pro .title {
     font-size: 30px;
   }
-  .teaser-container-three .teaser-wrapper {
-    height: 294px;
+  .teaser-container-three, .teaser-container {
+    .teaser-wrapper {
+      height: 294px;
+    }
   }
   .custom-banner-box-link-pro {
     top: 10px;
